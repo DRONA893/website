@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yadhu Krishna PM | website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:zoomEffect 8s ease-in-out infinite alternate;
+}
+
+@keyframes zoomEffect{
+    from{transform:scale(1);}
+    to{transform:scale(1.1);}
+}
+
+/* Overlay */
+.overlay{
+    position:absolute;
+    bottom:40px;
+    right:40px;
+    max-width:500px;
+    background:rgba(0,0,0,0.6);
+    padding:25px;
+    border-radius:15px;
+    text-align:right;
+}
+
+
+
+/* Animated 17 */
+.age{
+    font-size:90px;
+    font-weight:bold;
+    color:#ffcc00;
+    animation:pop 2s infinite alternate;
+}
+
+@keyframes pop{
+    from{transform:scale(1);}
+    to{transform:scale(1.15);}
+}
+
+/* Intro Text */
+.overlay h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.overlay p{
+    font-size:20px;
+    max-width:700px;
+}
+
+/* Scroll Text */
+.marquee{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.marquee span{
+    display:inline-block;
+    padding-left:100%;
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+    animation:scrollText 12s linear infinite;
+}
+
+@keyframes scrollText{
+    from{transform:translateX(0);}
+    to{transform:translateX(-100%);}
+}
+
+/* SECTION */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+
+/* CONTACT */
+.contact{
+    background:#111827;
+}
+
+.contact a{
+    color:#60a5fa;
+    font-size:20px;
+    text-decoration:none;
+}
+
+footer{
+    background:black;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="profile.jpg" alt="My Photo">
+
+    <div class="overlay">
+        <div class="age">17</div>
+        <h1>Hi, I'm yadhu Krishna PM</h1>
+        <p>
+            Welcome to my website. I am a passionate developer who builds AI assistants,
+            automation tools, and creative tech projects.
+        </p>
+    </div>
+
+    <div class="marquee">
+        <span>Presenting myself, yadhu Krishna PM — Welcome to my website 🚀</span>
+    </div>
+</section>
+
+<!-- HOBBY SECTION -->
+<!-- HOBBY SECTION -->
+<section class="hobby">
+    <h2>My Hobby - Hot Wheels</h2>
+    <p>Collecting and admiring detailed miniature cars is one of my passions.</p>
+
+    <div class="gallery">
+        <img src="hot1.jpg">
+        <img src="hot2.jpg">
+        <img src="hot3.jpg">
+    </div>
+</section>
+
+
+<!-- FUTURE SECTION -->
+<section>
+    <h2>Future Projects</h2>
+    <p>This section is reserved for adding more projects and details in the future.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email me directly:</p>
+    <a href="mailto:arshpm3@gmail.com">aarushpm3@gmail.com</a>
+</section>
+
+
+<footer>
+    © 2026 yadhu Krishna PM | All Rights Reserved
+</footer>
+
+</body>
+</html>
