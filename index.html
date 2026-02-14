@@ -7,6 +7,17 @@
 
 <style>
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
 
 /* NAVBAR */
 .navbar{
@@ -27,25 +38,6 @@
     height:50px;
     cursor:pointer;
 }
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#0f172a;
-    color:white;
-    overflow-x:hidden;
-}
-<!-- HEADER -->
-<header class="navbar">
-    <div class="logo">
-        <img src="logo.png" alt="YK Productions Logo">
-    </div>
-</header>
-
 
 /* HERO SECTION */
 .hero{
@@ -115,7 +107,6 @@ body{
     padding-left:100%;
     font-size:22px;
     font-weight:bold;
-    color:white;
     animation:scrollText 12s linear infinite;
 }
 
@@ -206,6 +197,15 @@ footer{
 
 <body>
 
+<!-- HEADER -->
+<header class="navbar">
+    <div class="logo">
+        <a href="#">
+            <img src="logo.png" alt="YK Productions Logo">
+        </a>
+    </div>
+</header>
+
 <!-- HERO SECTION -->
 <section class="hero">
     <img src="profile.jpg" alt="My Photo">
@@ -241,19 +241,12 @@ footer{
     <h2>Book an Appointment</h2>
 
     <form action="https://formspree.io/f/xnjbdjyw" method="POST">
-
         <input type="hidden" name="_subject" value="New Appointment Booking">
-
         <input type="text" name="name" placeholder="Your Name" required>
-
         <input type="tel" name="phone" placeholder="Phone Number" required>
-
         <input type="email" name="email" placeholder="Email Address" required>
-
         <input type="datetime-local" name="datetime" required>
-
         <button type="submit">Submit</button>
-
     </form>
 </section>
 
@@ -276,7 +269,4 @@ footer{
 
 </body>
 </html>
-
-
-
 
