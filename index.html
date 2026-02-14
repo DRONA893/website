@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>yadhu Krishna PM | website</title>
+<title>Yadhu Krishna PM | Website</title>
 
 <style>
 *{
@@ -12,42 +12,6 @@
     box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
-
-.appointments{
-    padding:60px 20px;
-    background:#1e293b;
-    text-align:center;
-}
-
-.appointments form{
-    max-width:600px;
-    margin:auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.appointments input{
-    padding:12px;
-    border-radius:8px;
-    border:none;
-    font-size:16px;
-}
-
-.appointments button{
-    padding:12px;
-    border:none;
-    background:#2563eb;
-    color:white;
-    font-size:16px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-.appointments button:hover{
-    background:#1d4ed8;
-}
-
 
 body{
     background:#0f172a;
@@ -86,8 +50,6 @@ body{
     text-align:right;
 }
 
-
-
 /* Animated 17 */
 .age{
     font-size:90px;
@@ -101,7 +63,6 @@ body{
     to{transform:scale(1.15);}
 }
 
-/* Intro Text */
 .overlay h1{
     font-size:40px;
     margin-bottom:10px;
@@ -109,7 +70,6 @@ body{
 
 .overlay p{
     font-size:20px;
-    max-width:700px;
 }
 
 /* Scroll Text */
@@ -141,6 +101,7 @@ section{
     text-align:center;
 }
 
+/* GALLERY */
 .gallery{
     display:flex;
     flex-wrap:wrap;
@@ -161,6 +122,39 @@ section{
     transform:scale(1.08);
 }
 
+/* APPOINTMENTS */
+.appointments{
+    background:#1e293b;
+}
+
+.appointments form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.appointments input{
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+.appointments button{
+    padding:12px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.appointments button:hover{
+    background:#1d4ed8;
+}
 
 /* CONTACT */
 .contact{
@@ -189,7 +183,7 @@ footer{
 
     <div class="overlay">
         <div class="age">17</div>
-        <h1>Hi, I'm yadhu Krishna PM</h1>
+        <h1>Hi, I'm Yadhu Krishna PM</h1>
         <p>
             Welcome to my website. I am a passionate developer who builds AI assistants,
             automation tools, and creative tech projects.
@@ -197,11 +191,10 @@ footer{
     </div>
 
     <div class="marquee">
-        <span>Presenting myself, yadhu Krishna PM — Welcome to my website 🚀</span>
+        <span>Presenting myself, Yadhu Krishna PM — Welcome to my website 🚀</span>
     </div>
 </section>
 
-<!-- HOBBY SECTION -->
 <!-- HOBBY SECTION -->
 <section class="hobby">
     <h2>My Hobby - Hot Wheels</h2>
@@ -214,11 +207,13 @@ footer{
     </div>
 </section>
 
-    <!-- APPOINTMENT SECTION -->
+<!-- APPOINTMENT SECTION -->
 <section class="appointments">
     <h2>Book an Appointment</h2>
 
     <form action="https://formspree.io/f/xnjbdjyw" method="POST">
+
+        <input type="hidden" name="_subject" value="New Appointment Booking">
 
         <input type="text" name="name" placeholder="Your Name" required>
 
@@ -233,8 +228,6 @@ footer{
     </form>
 </section>
 
-
-
 <!-- FUTURE SECTION -->
 <section>
     <h2>Future Projects</h2>
@@ -245,14 +238,15 @@ footer{
 <section class="contact">
     <h2>Contact Me</h2>
     <p>Email me directly:</p>
-    <a href="mailto:arshpm3@gmail.com">aarushpm3@gmail.com</a>
+    <a href="mailto:arshpm3@gmail.com">arshpm3@gmail.com</a>
 </section>
 
-
 <footer>
-    © 2026 yadhu Krishna PM | All Rights Reserved
+    © 2026 Yadhu Krishna PM | All Rights Reserved
 </footer>
 
 </body>
 </html>
+
+
 
