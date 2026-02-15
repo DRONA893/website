@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YK Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#1e3a8a;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+}
+
+.logo img{
+    height:45px;
+}
+
+.back-home a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* STORE SECTION */
+.store{
+    margin-top:100px;
+    padding:40px;
+    text-align:center;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.product-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+}
+
+.product-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-card button{
+    margin-top:15px;
+    padding:10px;
+    width:100%;
+    background:#2563eb;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ORDER FORM */
+.order-section{
+    margin-top:60px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.order-section input,
+.order-section select,
+.order-section textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+}
+
+.order-section button{
+    margin-top:20px;
+    padding:12px;
+    background:#3b82f6;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="YK Logo">
+    </div>
+    <div class="back-home">
+        <a href="index.html">Home</a>
+    </div>
+</header>
+
+<section class="store">
+    <h1>YK Store</h1>
+    <p>Premium Products by YK Productions</p>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="product1.jpg">
+            <h3>YK Hoodie</h3>
+            <p>₹999</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="product2.jpg">
+            <h3>YK Cap</h3>
+            <p>₹499</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2>Place Your Order</h2>
+
+        <form action="https://formspree.io/f/xnjbdjyw" method="POST">
+
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="text" name="Phone Number" placeholder="Phone Number" required>
+            <input type="text" name="House Number" placeholder="House Number" required>
+            <input type="text" name="House Name" placeholder="House Name" required>
+            <input type="text" name="Nearest Landmark" placeholder="Nearest Landmark" required>
+            <input type="text" name="PIN Code" placeholder="PIN Code" required>
+
+            <textarea name="Full Address" placeholder="Full Address" required></textarea>
+
+            <select name="Payment Method" required>
+                <option value="">Select Payment Method</option>
+                <option value="UPI">UPI</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+
+            <input type="text" name="UPI ID" placeholder="Enter UPI ID (If selected UPI)">
+
+            <button type="submit">Submit Order</button>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
