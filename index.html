@@ -30,6 +30,7 @@ body{
     backdrop-filter:blur(10px);
     display:flex;
     align-items:center;
+    justify-content:space-between;
     padding:0 30px;
     z-index:1000;
 }
@@ -37,6 +38,17 @@ body{
 .logo img{
     height:50px;
     cursor:pointer;
+}
+
+.store-icon a{
+    font-size:28px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.store-icon a:hover{
+    color:#3b82f6;
 }
 
 /* HERO SECTION */
@@ -71,7 +83,6 @@ body{
     text-align:right;
 }
 
-/* Animated 17 */
 .age{
     font-size:90px;
     font-weight:bold;
@@ -200,9 +211,13 @@ footer{
 <!-- HEADER -->
 <header class="navbar">
     <div class="logo">
-        <a href="#">
+        <a href="index.html">
             <img src="logo.png" alt="YK Productions Logo">
         </a>
+    </div>
+
+    <div class="store-icon">
+        <a href="store.html">🛒</a>
     </div>
 </header>
 
@@ -250,13 +265,11 @@ footer{
     </form>
 </section>
 
-<!-- FUTURE SECTION -->
 <section>
     <h2>Future Projects</h2>
     <p>This section is reserved for adding more projects and details in the future.</p>
 </section>
 
-<!-- CONTACT -->
 <section class="contact">
     <h2>Contact Me</h2>
     <p>Email me directly:</p>
@@ -269,5 +282,4 @@ footer{
 
 </body>
 </html>
-
 
